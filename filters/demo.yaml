@@ -20,4 +20,4 @@
 
   - name: Extract host name
     ansible.builtin.debug:
-      msg: "{{ website | split(',') }}"       
+      msg: "{{ Greeting | split(',') }}"       
