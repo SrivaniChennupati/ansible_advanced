@@ -10,4 +10,4 @@
 
   - name: Printing Undefined variable
     ansible.builtin.debug:
-      msg: "{{ course | default(devops) }}"     # now devops will be given to course
+      msg: "{{ course | default('devops') }}"     # now devops will be given to course
