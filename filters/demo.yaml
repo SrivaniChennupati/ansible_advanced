@@ -4,6 +4,7 @@
   vars:
     Name: Srivani
     website: https://www.joindevops.com/
+    Greeting: Hello Porter , How are you ?
   tasks:
   - name: converting upper case to lowercase
     ansible.builtin.debug:
@@ -15,4 +16,8 @@
 
   - name: Extract host name
     ansible.builtin.debug:
-      msg: "{{ website | urlsplit('hostname') }}"    
+      msg: "{{ website | urlsplit('hostname') }}" 
+
+  - name: Extract host name
+    ansible.builtin.debug:
+      msg: "{{ website | split(',') }}"       
