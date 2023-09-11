@@ -1,0 +1,9 @@
+- name: working on fiters
+  hosts: localhost
+  become: yes
+  vars:
+    Name: Srivani
+  tasks:
+  - name: converting upper case to lowercase
+    ansible.builtin.debug:
+      msg: "{{ Name | upper }}"
