@@ -15,4 +15,4 @@
 
   - name: Extract host name
     ansible.builtin.debug:
-      mag: "{{ website | urlsplit('hostname')}}"    
+      msg: "{{ website | urlsplit('hostname') }}"    
