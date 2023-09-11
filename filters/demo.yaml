@@ -7,3 +7,7 @@
   - name: converting upper case to lowercase
     ansible.builtin.debug:
       msg: "{{ Name | upper }}"
+
+  - name: Printing Undefined variable
+    ansible.builtin.debug:
+      msg: "{{ course | default(devops )}}"     # now devops will be given to course
