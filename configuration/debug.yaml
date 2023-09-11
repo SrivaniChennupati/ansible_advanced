@@ -1,5 +1,6 @@
 - name: testing the ansible configuration
   hosts: centos
+  become: yes
   tasks:
   - name: printing the message
     ansible.builtin.shell: echo "Hello HarryPorter" &>>/tmp/hello.txt
